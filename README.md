@@ -9,8 +9,8 @@ The purpose of this analysis is to apply machine learning to solve a real-world 
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the data is oversampled using the RandomOverSampler and SMOTE algorithms, and the data is undersampled using the ClusterCentroids algorithm. Furthermore, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used as well. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, are compared to predict credit risk. Finally, the performance of these models are evaluated to recommend on whether they should be used to predict credit risk.
 
 <p float="left">
-  <img src="Images/loan.png" width="600" height="350" />
-  <img src="Images/loan1.png" width="600" height="350" />
+  <img src="Images/loan.png" width="350" height="300" />
+  <img src="Images/loan1.png" width="350" height="300" />
 </p>
 
 <p>&nbsp;</p>
@@ -80,10 +80,6 @@ As mentioned in the results, 35.39% of Vine reviews were 5-stars. Even though th
 With that stated, an additional analysis using the data from the *verified purchase* column could be used to analyze the quality of product reviews. The data can be filtered to consider reviews from members of the paid Amazon Vine program as well as from non-paid individuals, that have more than 20 total votes and that a purchase has been verified. It is found that an "Amazon Verified Purchase" review means Amazon has verified that the person writing the review purchased the product at Amazon and didn't receive the product at a deep discount. As a result, this can further confirm the reviews for beauty products are unbiased. 
 
 In conclusion, a data exploration on Amazon's Beauty products dataset was done to filter product reviews that were written by members of the paid Amazon Vine program as well as from non-paid individuals. PySpark was used to perform the ETL process. That is, to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Additionally, PySpark was used to determine if there was any bias toward favorable reviews from Vine members in the dataset. 
-
-<p>&nbsp;</p>
-
-![loan2](Images/loan2.png)
 
 <p float="left">
   <img src="Images/loan2.png" width="500" height="300" />
