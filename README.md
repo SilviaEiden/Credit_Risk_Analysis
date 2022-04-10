@@ -6,11 +6,11 @@
 
 The purpose of this analysis is to apply machine learning to solve a real-world challenge: credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, different techniques are employed to train and evaluate models with unbalanced classes. Libraries such as imbalanced-learn and scikit-learn are used to build and evaluate models using resampling.
 
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the data is oversampled using the RandomOverSampler and SMOTE algorithms, and the data is undersampled using the ClusterCentroids algorithm. Furthermore, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used as well. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, are compared to predict credit risk. Finally, the performance of these models are evaluated to recommend on whether they should be used to predict credit risk.
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the data is oversampled using the RandomOverSampler and SMOTE algorithms, and the data is undersampled using the ClusterCentroids algorithm. Furthermore, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used as well. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, are compared to predict credit risk. Finally, the performance of these models is evaluated to recommend on whether they should be used to predict credit risk.
 
 <p float="left">
-  <img src="Images/loan.png" width="350" height="300" />
-  <img src="Images/loan1.png" width="350" height="300" />
+  <img src="Images/loan.png" width="400" height="350" />
+  <img src="Images/loan1.png" width="400" height="350" />
 </p>
 
 <p>&nbsp;</p>
@@ -75,11 +75,9 @@ Below is a brief summary of the performance of all six machine learning models.
 
 ## Summary
 
-As mentioned in the results, 35.39% of Vine reviews were 5-stars. Even though these reviews are written by members of the paid Amazon Vine program, it is not led to believe that there is a positivity bias for reviews of the beauty products in the Vine program. This is mainly due to the conservative percentage of the 5-star reviews found in this analysis and most likely because it’s an invitation-only program. Which means, a selective group of people are encouraged to submit their reviews for beauty products at Amazon.
+Machine learning is a very powerful tool that can handle and analyze risk on large datasets. In this analysis, 6 different machine learning models were used on the same dataset to predict credit risk, although each model has its own strengths and weaknesses. With that stated, the EasyEnsembleClassifier model had the best outcome. It is found that the EasyEnsembleClassifer model had an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk" applications. The recall rate is at 92% while the F1 score was at 16%. And so, it is recommended to use the EasyEnsembleClassifier model to predict credit risk.
 
-With that stated, an additional analysis using the data from the *verified purchase* column could be used to analyze the quality of product reviews. The data can be filtered to consider reviews from members of the paid Amazon Vine program as well as from non-paid individuals, that have more than 20 total votes and that a purchase has been verified. It is found that an "Amazon Verified Purchase" review means Amazon has verified that the person writing the review purchased the product at Amazon and didn't receive the product at a deep discount. As a result, this can further confirm the reviews for beauty products are unbiased. 
-
-In conclusion, a data exploration on Amazon's Beauty products dataset was done to filter product reviews that were written by members of the paid Amazon Vine program as well as from non-paid individuals. PySpark was used to perform the ETL process. That is, to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Additionally, PySpark was used to determine if there was any bias toward favorable reviews from Vine members in the dataset. 
+In conclusion, using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the data is oversampled using the RandomOverSampler and SMOTE algorithms, and the data is undersampled using the ClusterCentroids algorithm. Furthermore, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used as well. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, are compared to predict credit risk. Finally, the performance of these models is evaluated to recommend on whether they should be used to predict credit risk.
 
 <p float="left">
   <img src="Images/loan2.png" width="500" height="300" />
