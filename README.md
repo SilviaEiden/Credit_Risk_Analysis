@@ -9,8 +9,8 @@ The purpose of this analysis is to apply machine learning to solve a real-world 
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the data is oversampled using the RandomOverSampler and SMOTE algorithms, and the data is undersampled using the ClusterCentroids algorithm. Furthermore, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used as well. Next, two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, are compared to predict credit risk. Finally, the performance of these models is evaluated to recommend on whether they should be used to predict credit risk.
 
 <p float="left">
-  <img src="Images/loan.png" width="400" height="350" />
-  <img src="Images/loan1.png" width="400" height="350" />
+  <img src="Images/loan.png" width="400" height="300" />
+  <img src="Images/loan1.png" width="400" height="300" />
 </p>
 
 <p>&nbsp;</p>
